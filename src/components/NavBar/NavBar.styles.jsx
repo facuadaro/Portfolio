@@ -18,11 +18,10 @@ export const ContainerLogo = styled.div`
     display: flex;
     align-items: center;
     h1, h2 {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 700;
         color: ${colors.TEXT_BLACK};
         margin: 0;
-
     }
 
     h1 {
@@ -35,11 +34,29 @@ export const ContainerLogo = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    @media (max-width: 768px) {
+        h1, h2 {
+            font-weight: 700;
+            font-size: 700;
+        }
+    }
+
+    @media (max-width: 667px) {
+        h1, h2 {
+            font-size: 15px;
+        }
+    }
 `
 
 export const ImageLogo = styled.img`
-width: 90px;
-        padding-right: 20px;
+    width: 90px;
+    padding-right: 20px;
+
+    @media (max-width: 768px) {
+        width: 70px;
+        padding-right: 5px;
+    }
 `
 
 export const ContainerItems = styled.div`
@@ -54,7 +71,7 @@ export const ContainerItems = styled.div`
     }
 
     @media (max-width: 768px) {
-        display: ${(props) =>(props.showMenuBurger ? 'inline-grid' : 'none')};
+        display: ${(props) => (props.showMenuBurger ? 'inline-grid' : 'none')};
         position: absolute;
         top: 100px;
         background: ${colors.TEXT_WHITE};
@@ -91,7 +108,13 @@ export const ContainerBurger = styled.div`
     display: none;
 
     @media (max-width: 768px) {
+        padding: 0 15px;
         display: block;
+    }
+
+    
+    @media (max-width: 667px) {
+        padding: 2px;
     }
 `
 
