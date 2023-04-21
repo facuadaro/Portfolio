@@ -17,6 +17,7 @@ background: ${colors.TEXT_WHITE};
 export const ContainerLogo = styled.div`
     display: flex;
     align-items: center;
+    padding: 0 10px;
     h1, h2 {
         font-weight: 700;
         font-size: 700;
@@ -29,7 +30,7 @@ export const ContainerLogo = styled.div`
     }
 
     h2 {
-        background: linear-gradient(135deg , #cb5eee 0%, #4be1ec 100% );
+        background: linear-gradient(#00d8ff 55%, #1dadff 65%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -89,11 +90,11 @@ export const ContainerItems = styled.div`
 export const Button = styled.button`
     color: ${colors.TEXT_BLACK};
     box-shadow: ${colors.BOX_SHADOW_BUTTON};
-    background: linear-gradient(135deg , #cb5eee 0%, #4be1ec 100% );
+    background: linear-gradient(170deg,#00d8ff 45%, #1dadff 60%);
     padding: 12px 20px;
     border-radius: 999px;
     border: none;
-    margin: 10px 0;
+    margin: 10px 10px;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;

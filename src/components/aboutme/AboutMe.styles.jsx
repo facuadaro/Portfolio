@@ -38,7 +38,8 @@ export const Title = styled.h1`
 
     p:nth-child(2) {
         font-size: 35px;
-        background: ${colors.TEXT_GRADIENT_PURPLE};
+        /* background: ${colors.TEXT_GRADIENT_PURPLE}; */
+        background: linear-gradient(#00d8ff 60%, #1dadff 65%);
         background-clip: text !important;
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
@@ -53,6 +54,15 @@ export const Title = styled.h1`
 
         p:nth-child(2) {
                 font-size: 2rem;
+            }
+    }
+
+    @media (max-width: 468px){
+        p{
+            font-size: 25px;
+        }
+        p:nth-child(2) {
+                font-size: 1.7rem;
             }
     }
 `
@@ -90,7 +100,7 @@ export const ContainerImage = styled.div`
     img {
         width: 250px;
         border-radius: 50%;
-        background-color:  lightblue;
+        background: linear-gradient(#00d8ff 55%, #1dadff 65%);
     }
 
     @media (max-width: 768px) {
