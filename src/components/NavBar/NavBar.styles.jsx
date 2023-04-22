@@ -106,6 +106,7 @@ export const ContainerItems = styled.div`
             color: ${colors.TEXT_WHITE};
             background: linear-gradient(170deg,#00d8ff 45%, #1dadff 60%);
             text-shadow: black 1px 2px 2px;
+            box-shadow: ${colors.BOX_SHADOW_BUTTON};
         }
     }
 `
