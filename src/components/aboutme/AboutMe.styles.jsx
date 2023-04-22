@@ -37,7 +37,7 @@ export const Title = styled.h1`
     }
 
     p:nth-child(2) {
-        font-size: 35px;
+        font-size: 37px;
         /* background: ${colors.TEXT_GRADIENT_PURPLE}; */
         background: linear-gradient(#00d8ff 60%, #1dadff 65%);
         background-clip: text !important;

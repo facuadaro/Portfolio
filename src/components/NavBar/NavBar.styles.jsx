@@ -45,7 +45,17 @@ export const ContainerLogo = styled.div`
 
     @media (max-width: 667px) {
         h1, h2 {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        h1 {
             font-size: 15px;
+        }
+
+        h2 {
+            font-size: 13px;
         }
     }
 `
@@ -115,7 +125,7 @@ export const ContainerBurger = styled.div`
 
     
     @media (max-width: 667px) {
-        padding: 2px;
+        padding: 5px;
     }
 `
 
