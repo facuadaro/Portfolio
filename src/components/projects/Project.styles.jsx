@@ -4,10 +4,10 @@ import { colors } from "../../styles/colors";
 export const Projects = styled.div`
     max-width: 900px;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 100px;
 
     @media (max-width: 768px) {
-        padding-top: 10px;
+        padding-top: 80px;
     }
 `
 

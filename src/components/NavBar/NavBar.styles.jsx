@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import { colors } from '../../styles/colors'
 
 export const ContainerNavbar = styled.div`
-
+position: fixed;
+width: 100%;
 max-height: 100vh;
 height: 100px;
 box-shadow: ${colors.BOX_SHADOW};
@@ -78,14 +79,20 @@ export const ContainerItems = styled.div`
         padding: 0 13px;
         text-decoration: none;
         color: ${colors.TEXT_BLACK};
-        font-weight: 500;
+        
+        border-radius: 999px;
+        padding: 12px 20px;
+        
     }
 
     @media (max-width: 768px) {
         display: ${(props) => (props.showMenuBurger ? 'inline-grid' : 'none')};
         position: absolute;
+        text-align: center;
+        justify-content: center;
         top: 100px;
         background: ${colors.TEXT_WHITE};
+        font-weight: 700;
         box-shadow: ${colors.BOX_SHADOW};
         padding: 10px 0 20px 0;
         width: 100%;
@@ -94,12 +101,19 @@ export const ContainerItems = styled.div`
         a {
             padding: 10px 20px;
         }
+
+        p {
+            color: ${colors.TEXT_WHITE};
+            background: linear-gradient(170deg,#00d8ff 45%, #1dadff 60%);
+            text-shadow: black 1px 2px 2px;
+        }
     }
 `
 
 export const Button = styled.button`
-    color: ${colors.TEXT_BLACK};
+    color: ${colors.TEXT_WHITE};
     box-shadow: ${colors.BOX_SHADOW_BUTTON};
+    text-shadow: black 1px 1.5px 2px;
     background: linear-gradient(170deg,#00d8ff 45%, #1dadff 60%);
     padding: 12px 20px;
     border-radius: 999px;
@@ -110,8 +124,15 @@ export const Button = styled.button`
     cursor: pointer;
     
     @media (max-width: 768px) {
-        width: 50%;
-        margin: 5px 10px 0 10px;
+        width: 100%;
+        /* margin: 5px 10px 0 10px; */
+        margin: 10px 0; 
+        /* padding: 0; */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 `
 

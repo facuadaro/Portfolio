@@ -44,7 +44,7 @@ const Contact = () => {
     const form = useRef()
 
     return (
-        <S.ContainerContact>
+        <S.ContainerContact id='contact'>
             <S.Title>
                 ✉️Contact with me
             </S.Title>

@@ -7,7 +7,7 @@ import  WebsiteLogo  from '../../svg/website.svg'
 const Projects = () => {
 
     return (
-        <S.Projects>
+        <S.Projects id='projects'>
             <S.Title>
                 Some of
                 <span>

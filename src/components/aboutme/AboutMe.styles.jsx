@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../styles/colors";
 
 export const ContainerAboutMe = styled.div`
-    
+    padding: 170px 0 0 0;
 `
 
 export const ContainerFlex = styled.div`
