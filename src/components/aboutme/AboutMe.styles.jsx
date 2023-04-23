@@ -3,6 +3,10 @@ import { colors } from "../../styles/colors";
 
 export const ContainerAboutMe = styled.div`
     padding: 170px 0 0 0;
+
+    @media (max-width: 768px) {
+        padding: 100px 0 0 0;
+    }
 `
 
 export const ContainerFlex = styled.div`
